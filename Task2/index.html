@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Semantic HTML Showcase </title>
+    </head>
+
+    <body>
+
+        <header>
+
+         <h1>Welcome To Semantic HTML Showcase</h1>
+         <p>This page is desigened using semantic HTML tags</p>
+        
+        </header>
+            <hr>  
+        <nav>
+
+            <a href="#About">About</a> |
+            <a href="#"> Features</a> |
+            <a href="#Contact">Contact</a> |
+            <a href="#">Coming soon</a>
+
+        </nav>
+            <hr>
+        <main>
+
+            <section id="About">
+
+                <h2>About Semantic HTML</h2>
+                <p> Semantic HTML introduces meaning to the web page rather than just presentation .
+                    For example , using  <code> article </code> for articles and <code> nav </code> for navigation .</p>
+
+            </section>
+
+            <section>
+
+                <article>
+                    <h3> Hyperlinks </h3>
+                    <p> Visit <a href="https://W3schools.com">W3schools.com</a> to learn HTMl</p>
+                    <p> <a href="#list">Go to list Section</a></p>
+                </article>
+
+                <article>
+                    <h3> Accessible Image</h3>
+                    <img src="assign2.png" alt="Starimg">
+                    <p> A basic DOM structure image </p>
+                </article>
+
+                <article id="list">
+
+                    <h3> Useful HTML Lists</h3>
+                    <h4>Unordered List :</h4>
+
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+
+                    <h4> Ordered List</h4>
+                    <ol type="A">
+                        <li> Semantic Tags</li>
+                        <li> Forms</li>
+                        <li>Tables</li>
+                    </ol>
+
+                    <h4> Description List :</h4>
+                    <dl>
+                        <dt>Coffee</dt>
+                        <dd>- Black hot drink</dd>
+                        <dt>Milk</dt>
+                        <dd>- White cold drink</dd>
+                    </dl>
+                </article>
+
+                <article>
+
+                    <h3>Table Example</h3>
+                    <table border="2">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Semantic Tag</td>
+                                <td>Gives meaning to content</td>
+                            </tr>
+                            <tr>
+                                <td>Non-semantic Tag</td>
+                                <td> Only used for layout (<code> div </code> , <code> span</code>) </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> More Tags to be added soon...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </article>
+
+                <article>
+                    <h3> Quick Tip</h3>
+                    <p> Always use the <code> alt</code> attribute in <code> img</code> 
+                    for accessibility and SEO.</p>
+                </article>
+            </section>
+            
+            <section id="Contact">
+                <h3> Contact Us </h3>
+                <form>
+                    <label>Name</label> <br>
+                    <input type="text" name="name"> <br>
+
+                    <label>Email :</label> <br>
+                    <input type="email" name="email"> <br>
+
+                    <label>Message :</label> <br>
+                    <input type="text" name="Message"> <br> <br>
+
+                    <button type="submit"> send</button>
+                </form>
+            </section>
+
+            <footer>
+                <p> 2025 Semantic Web Tutorial</p>
+                <p>Validate your code at <a href="https://validator.w3.org/"> W3C Validator</a></p>
+            </footer>
+        </main>
+    </body>
+</html>
