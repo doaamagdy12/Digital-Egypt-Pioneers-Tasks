@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3</title>
+</head>
+<body>
+
+<main style="background-color: rgb(39, 93, 147); color: white;">
+    <form>
+        <fieldset>
+            <legend style="background-color: brown;">Personal Data</legend>
+
+            <section class="names" style="background-color: brown;">
+                <fieldset>
+                    <legend style="background-color: blue;">Your Name</legend>
+                    <br>
+                    <label for="first">First Name</label>
+                    <input type="text" id="first" name="Fname" placeholder="ex Doaa"><br>
+
+                    <label for="last">Last Name</label>
+                    <input type="text" id="last" name="Lname" placeholder="ex Arfa"><br>
+                </fieldset>
+            </section>
+
+            <br><br>
+
+            <section class="connect">
+                <table>
+                    <tr>
+                        <td><label for="phone">Your Phone:</label></td>
+                        <td><input type="text" id="phone" name="UserPhone" maxlength="11"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Email:</label></td>
+                        <td><input type="email" id="Email" name="UserEmail"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password:</label></td>
+                        <td><input type="password" id="pass" name="UserPass"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="repass">Re Password:</label></td>
+                        <td><input type="password" id="repass" name="UserRePass"></td>
+                    </tr>
+                </table>
+            </section>
+
+            <br><br>
+
+            <section>
+                <label for="country">Select Your Country:</label><br>
+                <select name="country" >
+                    <optgroup label="Egypt">
+                        <option value="Cairo">Cairo</option>
+                        <option value="alex">Alexandrea</option>
+                        <option value="Mansora">Mansora</option>
+                    </optgroup>
+                    <optgroup label="USA">
+                        <option value="Abu Dhabi">Abu Dhabi</option>
+                        <option value="Ajman">Ajman</option>
+                        <option value="Sharjeh">Sharjeh</option>
+                    </optgroup>
+                    <optgroup label="Saudi Arabia">
+                        <option value="Riyadh">Riyadh</option>
+                        <option value="Jaddah">Jaddah</option>
+                        <option value="Dammam">Dammam</option>
+                    </optgroup>
+                </select>
+            </section>
+
+            <br><br>
+            <button type="submit" style="background-color: brown;">SUBMIT</button>
+        </fieldset>
+    </form>
+</main>
+
+</body>
+</html>
