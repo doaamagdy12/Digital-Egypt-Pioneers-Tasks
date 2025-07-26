@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color:rgb(142, 130, 130);
+  /* background-color: rgb(168, 149, 149); */
+  
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    
+}
+
+nav .links
+{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .links a{
+
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+nav .links a:hover
+{
+    color: goldenrod;
+}
+
+#home
+{
+    background-image: url("imgs/home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color:darkblue;
+
+
+    margin-top: 69px;
+}
+
+#home h1 , #about h2 , #team h2
+{
+    margin-bottom: 20px;
+}
+
+section
+{
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.about-title ,.team-title
+{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.about-title h2 ,.team-title h2
+{
+    color: black;
+    position: relative;
+}
+.about-title h2::before
+{
+    position: absolute;
+    content: "A";
+    font-size: 80px;
+    text-transform: uppercase;
+
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    
+    opacity: 6%;
+}
+
+.about-title h2::after
+{
+    position: absolute;
+    content: "";
+
+    width: 100px;
+    height: 4px;
+    background-color:grey;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100%;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.team-title h2::before
+{
+    position: absolute;
+    content: "O";
+    font-size: 80px;
+    text-transform: uppercase;
+
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    
+    opacity: 6%;
+}
+
+.team-title h2::after
+{
+    position: absolute;
+    content: "";
+
+    width: 100px;
+    height: 4px;
+    background-color:grey;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100%;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.about-title h2:hover::after ,.team-title h2:hover::after
+{
+    width: 150px;
+    cursor: pointer;
+}
+
+
+.paragraph p
+{
+    padding-bottom: 20px;
+}
+.bar{
+    background-color: #ddd;
+    height: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill{
+    height: 100%; 
+    background-color: red;
+}
+
+.about-content 
+{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.paragraph,.rating {
+    flex: 1;
+    padding: 10px;
+}
+
+.team-content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.card {
+  width: 220px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-img img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  transition: all .5s;
+}
+
+.card-img img:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.team-content ,.contact-btn
+{
+    color: black;
+}
+
+.contact-btn h3
+{
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-btn button
+{
+    padding: 12px 24px;
+    color: white;
+    background-color: coral;
+    border-radius: 7px;
+    cursor: pointer;
+
+    transition: all 0.3 ease ;
+}
+
+.contact-btn button:hover
+{
+    background-color: rgb(209, 105, 67);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .about-title, .paragraph, .rating {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
