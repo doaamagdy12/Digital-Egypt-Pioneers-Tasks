@@ -1,0 +1,262 @@
+/* Start Nav */
+nav
+{
+    background-color: rgba(0, 0, 0, 0.49);
+
+}
+/* End Nav */
+
+/* Start Section Home */
+#HOME
+{
+    background-image: url(../imgs/cover\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+
+}
+
+#HOME::after{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-content
+{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.home-content h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+/* End Section Home */
+
+/* Start Section About  */
+#ABOUT h2 , #CONTACT  h2
+{
+    position: relative;
+}
+#ABOUT h2::before , #CONTACT h2::before
+{
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 3px;
+    background-color: blue;
+    bottom: -5px;
+}
+/* End Section About  */
+
+
+/* Section Services */
+.line
+{
+    width: 50px;
+    height: 3px;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.icon-container
+{
+    width: 80px;
+    height: 80px;
+}
+/*End Section Services */
+
+/* Start Section Stats */
+.stats-section{
+
+    position: relative;
+    height: 50vh;
+}
+
+.stats-section img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stats-section .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,102, 204, 0.8);
+}
+
+.stats-section .container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.stats-section .icon{
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 24px;
+
+}
+
+/* End Section Stats */
+
+/* Start member Section */
+.member
+{
+    position:relative;
+    background-image: url("../imgs/grass.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 80px 0;
+
+}
+
+.member .overlay
+{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 102, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.profile-img
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+}
+
+.dots {
+    margin-top: 15px;
+}
+
+.dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 4px;
+    opacity: 0.7;
+}
+
+/* End member Section */
+
+/* Start Section WORK */
+
+.work .img-con img
+{
+    height: 250px;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.work:hover .img-con img
+{
+    transform: scale(1.1);
+
+}
+/* End Section WORK */
+
+/* Start Section Blog  */
+
+.card-img-top {
+    height: 300px;     
+    object-fit: cover;
+}
+
+.card-footer-left img
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.special-blog
+{
+    background-color: rgb(60, 106, 112);
+    padding: 5px 45px;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+/* End Section Blog  */
+
+/* Start Section Contact */
+#CONTACT .contact-right ul:nth-child(4) a
+{
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+    text-decoration: none;
+    border-radius: 50%;
+    border: 3px solid blue;
+    margin:0 5px ;
+
+    
+}
+#CONTACT .contact-right ul:nth-child(4) a:hover 
+{
+    background-color: blue;
+    border: 4px solid #ccc;
+}
+#CONTACT .contact-right ul:nth-child(4) a:hover i
+{
+
+    color: white;
+
+
+}
+/* End Section Contact */
+
